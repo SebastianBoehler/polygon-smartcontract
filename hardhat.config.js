@@ -3,7 +3,6 @@ require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 
 const { API_URL, PRIVATE_KEY, POLYGONSCAN_API_KEY } = process.env;
-console.log()
 
 module.exports = {
   defaultNetwork: "polygon_mumbai",
