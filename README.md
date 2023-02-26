@@ -14,6 +14,9 @@ npx hardhat verify CONTRACT_ADDR --network mumbai
 npx hardhat verify <SC_ADDRESS> <CONSTRUCTOR_ARGUMENT -> LOCK TIME>
 ```
 
+Solidity example contracts
+https://docs.soliditylang.org/en/v0.8.19/solidity-by-example.html
+
 Links:
 Faucet: https://faucet.polygon.technology/
 Tutorial: https://wiki.polygon.technology/docs/develop/alchemy/
