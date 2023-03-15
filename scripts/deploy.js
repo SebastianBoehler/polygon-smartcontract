@@ -15,13 +15,13 @@ async function main() {
   const maticAmount = '0.05'
   const lockedAmount = hre.ethers.utils.parseEther(maticAmount);
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
+  const AdvancedLock = await hre.ethers.getContractFactory("AdvancedLock");
+  const advancedlock = await AdvancedLock.deploy(unlockTime, { value: lockedAmount });
 
-  await lock.deployed();
+  await advancedlock.deployed();
 
   console.log(
-    `Lock with ${maticAmount} Matic and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+    `Lock with ${maticAmount} Matic and unlock timestamp ${unlockTime} deployed to ${advancedlock.address}`
   );
 }
 
